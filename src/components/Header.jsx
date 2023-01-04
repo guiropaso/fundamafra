@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
 
@@ -23,9 +24,9 @@ export default function Header() {
             </div>
             {/* Pages */}
             <div className='hidden space-x-12 font-semibold md:flex'>
-              <a className='hover:text-mainJam' href="#">Inicio</a>
-              <a className='hover:text-mainJam' href="#">Proyectos</a>
-              <a className='hover:text-mainJam' href="#">Contacto</a>
+              <Link className='hover:text-mainJam' to="/">Inicio</Link>
+              <Link className='hover:text-mainJam' to="/proyectos">Proyectos</Link>
+              <Link className='hover:text-mainJam' to="/contacto">Contacto</Link>
             </div>
             {/* CTA */}
             <a className='p-2 px-6 hidden text-white font-medium bg-purple rounded-full hover:bg-mainJam md:block' href="#">Dona</a>
@@ -44,7 +45,6 @@ export default function Header() {
               <a className='w-full text-center leading-10 rounded-b bg-indigo-600 text-white' href="#">Dona ahora</a>
             </div>
           </div>
-
         </nav>
     </>
   )
