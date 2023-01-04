@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hp-banner {
+    background-color: #a35392;
+    background-image: url(../public/wp1.jpg);
+    background-size: cover;
+}
+
+#menu-btn {
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+#menu-btn span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transition: all 0.5s;
+}
+
+.hamburguer-middle {
+    transform: translateY(7px);
+}
+
+.hamburguer-bottom {
+    transform: translateY(14px);
+}
+
+
+.open .hamburguer-top {
+    transform: rotate(45deg)  translate(6px,6px);
+}
+
+.open .hamburguer-bottom {
+    transform: rotate(315deg)  translate(-6px,6px);
+}
+.open .hamburguer-middle {
+    display: none;
+}
