@@ -49,24 +49,24 @@ export default function Homepage() {
         </div>
 
         {/* Flex Container */}
-        <div className='container flex space-y-12 mx-auto flex-col justify-center items-center'>
+        <div className='max-w-sm md:container flex space-y-12 mx-auto flex-col justify-center items-center'>
           {/* First Grid Container */}
-          <div className='grid grid-cols-6 max-w-5xl self-start'>
+          <div className='md:grid grid-cols-6 max-w-5xl self-start'>
             <div className='col-start-1 col-end-5 row-start-1 row-end-2'>
               <img className='w-full' src="../../public/voluntarios.jpg" alt="" />
             </div>
-            <div className='col-start-4 col-end-7 bg-zinc-100 row-start-1 row-end-2 my-8 p-5'>
-              <h3 className='text-3xl text-royal mt-20 mb-10'>Voluntariado</h3>
+            <div className='col-start-4 col-end-7 bg-zinc-100 row-start-1 row-end-2 md:my-8 p-5'>
+              <h3 className='text-3xl text-royal md:mt-20 mb-10'>Voluntariado</h3>
               <p>Siempre buscamos manos fraternas que nos ayuden a cambiar la realidad de las familias salvadoreñas para ejecutar una variedad de proyectos desde asistir con programas de educación hasta desarrollar sus propias ideas de cambio en la sociedad.</p>
             </div>
           </div>
           {/* Second Grid Container */}
-          <div className='grid grid-cols-6 max-w-5xl self-end'>
+          <div className='md:grid grid-cols-6 max-w-5xl self-end'>
             <div className='col-start-3 col-end-7 row-start-1 row-end-2'>
               <img className='w-full' src="../../public/pasantias.jpg" alt="" />
             </div>
-            <div className='col-start-1 col-end-4 bg-zinc-100 row-start-1 row-end-2 my-8 p-5'>
-              <h3 className='text-3xl text-royal mt-20 mb-10 text-right'>Pasantías y oportunidades laborales</h3>
+            <div className='col-start-1 col-end-4 bg-zinc-100 row-start-1 row-end-2 md:my-8 p-5'>
+              <h3 className='text-3xl text-royal md:mt-20 mb-10 text-right'>Pasantías y oportunidades laborales</h3>
               <p className='text-right'>Una pasantía en FUNDAMAFRA es una experiencia única, parte de trabajar de cerca con nuestro staff y voluntarios, nuestros interinos pueden completar un proyecto de su propia creación.</p>
             </div>
           </div>

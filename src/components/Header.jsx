@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <>
-        <nav className='relative container mx-auto py-6 '>
+        <nav className='relative max-w-sm md:container mx-auto py-6 '>
           {/* Container */}
           <div className='flex items-center justify-between'>
             {/* Logo */}
