@@ -8,6 +8,13 @@
     background-size: cover;
 }
 
+#proyectos-banner {
+    background-color: #666;
+    background-image: url(../public/wp2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 #menu-btn {
     width: 24px;
     height: 24px;
