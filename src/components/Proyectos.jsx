@@ -15,14 +15,15 @@ export default function Proyectos() {
         <h3 className='text-center my-20 font-bold text-5xl text-royal md:text-3xl'>NUESTRO <span className='text-center my-20 font-bold text-5xl text-mainJam md:text-3xl'>ENFOQUE</span></h3>
         <div className='container mx-auto flex justify-around items-center md:flex-row'>
           <div>
-            <div className='flex flex-row'>
-              <div>
-                <FaMedal/>
+            <div className='flex justify-center space-x-5 bg-lavender items-center flex-row'>
+              <div className='text-red-500'>
+                <FaMedal className='text-6xl'/>
               </div>
-              <div>
-                <h4>Give Donation</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt quibusdam quia suscipit. Ratione, ullam!</p>
+              <div className='max-w-md'>
+                <h4 className='text-3xl mb-5 text-royal'>Give Donation</h4>
+                <p className='text-lg text-purple'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt quibusdam quia suscipit. Ratione, ullam!</p>
               </div>
+              <span className='proyectos--span-rotated text-sm font-bold bg-red-500 p-1'>Prueba 1</span>
             </div>
             <div></div>
             <div></div>

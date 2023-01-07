@@ -51,3 +51,7 @@
 .open .hamburguer-middle {
     display: none;
 }
+
+.proyectos--span-rotated {
+    writing-mode: vertical-lr;
+}
