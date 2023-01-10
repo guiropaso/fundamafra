@@ -55,3 +55,28 @@
 .proyectos--span-rotated {
     writing-mode: vertical-lr;
 }
+
+.curves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.curves svg {
+    position: relative;
+    display: block;
+    width: calc(106% + 1.3px);
+    height: 150px;
+}
+
+.curves .shape-fill {
+    fill: #FFFFFF;
+}
+
+#contacto-intro {
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
