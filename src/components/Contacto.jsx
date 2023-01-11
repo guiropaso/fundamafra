@@ -1,4 +1,7 @@
 import React from 'react'
+import Form from './Form'
+import {FaPhoneAlt,FaMailBulk,FaMapMarkerAlt} from 'react-icons/fa'
+import { IconContext } from 'react-icons' 
 
 export default function Contacto() {
   return (
@@ -15,15 +18,34 @@ export default function Contacto() {
         </div>
       </section>
       <section id='contact-form'>
-        <div className='container mx-auto flex flex-col md:flex-row justify-around items-center'>
+        <div className='container pb-20 mx-auto flex flex-col md:flex-row justify-around items-center'>
           <div>
             <img className='relative -mt-36' src="../../public/contacto.png" alt="" />
+            <h3 className='text-3xl py-5 border-b-2 border-slate-300'>Encuéntranos</h3>
+            <div className='flex flex-col space-y-10 mt-10 w-2/4 mx-auto'>
+              <div className='flex flex-row justify-between items-center'>
+                <IconContext.Provider value={{className:'text-5xl text-white box-content mr-5 bg-mainJam rounded-full p-4'}}>
+                  <FaPhoneAlt/>
+                </IconContext.Provider>
+                <p className='font-bold'>+(503)7167-8151</p>
+              </div>
+              <div className='flex flex-row justify-between items-center'>
+              <IconContext.Provider value={{className:'text-5xl text-white box-content mr-5 bg-mainJam rounded-full p-4'}}>
+                <FaMailBulk className='text-5xl mr-5' />
+              </IconContext.Provider>
+                <p className='font-bold'>info@fundamafra.org</p>
+              </div>
+              <div className='flex flex-row justify-between items-center'>
+              <IconContext.Provider value={{className:'text-5xl text-white box-content mr-5 bg-mainJam rounded-full p-4'}}>
+                <FaMapMarkerAlt className='text-5xl mr-5' />
+              </IconContext.Provider>
+                <p className='font-bold'>+(503)7167-8151</p>
+              </div>
+            </div>
+
           </div>
           <div className=''>
-            <form className='bg-gray-50 border-2 border-slate-300 p-10 rounded-lg' action="">
-              <label htmlFor="name">Name</label>
-              <input type="text" id='name' name='name' className='border-2 pl-4 w-60 border-slate-300 mx-auto focus:outline-royal rounded-md'/>
-            </form>
+            <Form />
           </div>
 
         </div>
