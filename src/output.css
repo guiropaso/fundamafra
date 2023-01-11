@@ -1279,6 +1279,11 @@ video {
   background-color: rgb(122 0 71 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-mainBlue:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 20 100 / var(--tw-bg-opacity));
+}
+
 .hover\:text-royal:hover {
   --tw-text-opacity: 1;
   color: rgb(13 37 108 / var(--tw-text-opacity));

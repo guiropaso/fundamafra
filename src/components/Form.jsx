@@ -15,6 +15,7 @@ function Form() {
                 <input type="text" id='email' name='email' className='border-2 px-4 w-full border-slate-300 mx-auto focus:outline-royal rounded-md py-2 mb-5 mt-2'/>
                 <label htmlFor="mensaje" className='font-bold'>Mensaje</label>
                 <textarea name="mensaje" id="mensaje" cols="30" rows="5" className='border-2 border-slate-300 focus:outline-royal rounded-md py-2 px-4 mt-2'></textarea>
+                <button className='bg-royal p-5 rounded-lg text-white font-bold mt-10 hover:bg-mainBlue'>Enviar Mensaje</button>
             </div>
             
         </form>
