@@ -1,5 +1,5 @@
 import React from 'react'
-import Form from './Form'
+import ContactForm from './ContactForm'
 import {FaPhoneAlt,FaMailBulk,FaMapMarkerAlt} from 'react-icons/fa'
 import { IconContext } from 'react-icons' 
 
@@ -45,7 +45,7 @@ export default function Contacto() {
 
           </div>
           <div className=''>
-            <Form />
+            <ContactForm />
           </div>
 
         </div>
