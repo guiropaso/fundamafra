@@ -37,7 +37,7 @@ function ContactForm() {
                         id='name'
                         name='name'
                     />
-                    <ErrorMessage name='name'/>
+                    <ErrorMessage component='div' className='text-red-500' name='name'/>
                     <label htmlFor="tel" className='font-bold mt-5'>Teléfono</label>
                     <Field
                         className='border-2 px-4 w-full border-slate-300 mx-auto focus:outline-royal rounded-md py-2 mt-2'
@@ -45,7 +45,7 @@ function ContactForm() {
                         id='tel'
                         name='tel'
                         />
-                    <ErrorMessage name='tel'/>
+                    <ErrorMessage component='div' className='text-red-500' name='tel'/>
                     <label htmlFor="email" className='font-bold mt-5'>Email</label>
                     <Field
                         className='border-2 px-4 w-full border-slate-300 mx-auto focus:outline-royal rounded-md py-2 mt-2'
@@ -53,7 +53,7 @@ function ContactForm() {
                         id='email'
                         name='email'
                         />
-                    <ErrorMessage name='email'/>
+                    <ErrorMessage component='div' className='text-red-500' name='email'/>
                     <label htmlFor="mensaje" className='font-bold mt-5'>Mensaje</label>
                     <Field as='textarea'
                         className='border-2 border-slate-300 focus:outline-royal rounded-md py-2 px-4 mt-2'
@@ -62,7 +62,7 @@ function ContactForm() {
                         cols="30"
                         rows="5">
                     </Field>
-                    <ErrorMessage name='mensaje'/>
+                    <ErrorMessage component='div' className='text-red-500' name='mensaje'/>
                     <button type='submit' className='bg-royal p-5 rounded-lg text-white font-bold mt-10 hover:bg-mainBlue'>Enviar Mensaje</button>
                 </div>  
             </Form>

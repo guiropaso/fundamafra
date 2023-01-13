@@ -713,6 +713,14 @@ video {
   width: 75%;
 }
 
+.w-5\/6 {
+  width: 83.333333%;
+}
+
+.w-4\/6 {
+  width: 66.666667%;
+}
+
 .max-w-xl {
   max-width: 36rem;
 }
@@ -1318,5 +1326,11 @@ video {
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 976px) {
+  .lg\:w-2\/4 {
+    width: 50%;
   }
 }

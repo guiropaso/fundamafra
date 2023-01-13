@@ -9,7 +9,7 @@ export default function Contacto() {
       <section id='contacto-intro' className='relative'>
         <div className='container mx-auto text-center py-40'>
           <h2 className='text-5xl font-bold text-white'>¿Tienes alguna pregunta?</h2>
-          <p className='text-lg mt-12 text-white max-w-xl mx-auto'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis voluptatem laudantium dolores dolor et amet quia vero similique quisquam ea.</p>
+          <p className='text-lg mt-12 text-white max-w-sm md:max-w-xl mx-auto'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis voluptatem laudantium dolores dolor et amet quia vero similique quisquam ea.</p>
         </div>
         <div className="curves">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -18,11 +18,11 @@ export default function Contacto() {
         </div>
       </section>
       <section id='contact-form'>
-        <div className='container pb-20 mx-auto flex flex-col md:flex-row justify-around items-center'>
+        <div className='container pb-20 space-y-20 md:space-y-0 mx-auto flex flex-col md:flex-row justify-around items-center'>
           <div>
             <img className='relative -mt-36' src="../../public/contacto.png" alt="" />
-            <h3 className='text-3xl py-5 border-b-2 border-slate-300'>Encuéntranos</h3>
-            <div className='flex flex-col space-y-10 mt-10 w-2/4 mx-auto'>
+            <h3 className='text-3xl py-5 border-b-2 border-slate-300 text-center md:text-left'>Encuéntranos</h3>
+            <div className='flex flex-col space-y-10 mt-10 w-4/6 lg:w-2/4 mx-auto'>
               <div className='flex flex-row justify-between items-center'>
                 <IconContext.Provider value={{className:'text-5xl text-white box-content mr-5 bg-mainJam rounded-full p-4'}}>
                   <FaPhoneAlt/>
@@ -31,13 +31,13 @@ export default function Contacto() {
               </div>
               <div className='flex flex-row justify-between items-center'>
               <IconContext.Provider value={{className:'text-5xl text-white box-content mr-5 bg-mainJam rounded-full p-4'}}>
-                <FaMailBulk className='text-5xl mr-5' />
+                <FaMailBulk />
               </IconContext.Provider>
                 <p className='font-bold'>info@fundamafra.org</p>
               </div>
               <div className='flex flex-row justify-between items-center'>
               <IconContext.Provider value={{className:'text-5xl text-white box-content mr-5 bg-mainJam rounded-full p-4'}}>
-                <FaMapMarkerAlt className='text-5xl mr-5' />
+                <FaMapMarkerAlt />
               </IconContext.Provider>
                 <p className='font-bold'>+(503)7167-8151</p>
               </div>
