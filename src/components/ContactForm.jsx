@@ -9,7 +9,24 @@ const initialValues = {
     mensaje: ''
 }
 
-const onSubmit = values => console.log(values)
+const onSubmit = values => {
+    console.log(values)
+    fetch("/contacto", {
+        method: 'POST',
+        body: JSON.stringify(values),
+        headers: {
+            "content-type": "application/json; charset=UTF-8"
+        }
+    })
+    .then(res => {
+        if(!res.ok) {
+            throw new Error(res.statusText)
+        }
+        return res.json()})
+
+    .then(data => console.log(data))
+    .catch(error => console.log('Error: ', error))
+}
 
 const phoneRegExp = /^\+?[1-9][0-9]{7,14}$/
 
@@ -28,7 +45,7 @@ function ContactForm() {
         validationSchema={validationSchema}
         onSubmit={onSubmit}
         >
-            <Form className='bg-gray-50 border-2 border-slate-300 p-10 rounded-lg' action="">
+            <Form className='bg-gray-50 border-2 border-slate-300 p-10 rounded-lg' method='POST'>
                 <div className='flex flex-col'>
                     <label htmlFor="name" className='font-bold'>Nombre</label>
                     <Field
