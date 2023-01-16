@@ -11,9 +11,17 @@ const initialValues = {
 
 const onSubmit = async values => {
     console.log(values)
-    const test = await fetch('/.netlify/functions/helloWorld')
+    const test = await fetch('/.netlify/functions/mailer', {
+        method: 'POST',
+        body: JSON.stringify(values),
+        headers: {
+            "content-type": "application/json; charset=UTF-8"
+        }
+    })
     .then(response => response.json())
-    alert(JSON.stringify(test))
+    .then(data => console.log(data))
+
+
 
     // fetch("/contacto", {
     //     method: 'POST',
