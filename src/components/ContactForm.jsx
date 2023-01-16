@@ -9,23 +9,27 @@ const initialValues = {
     mensaje: ''
 }
 
-const onSubmit = values => {
+const onSubmit = async values => {
     console.log(values)
-    fetch("/contacto", {
-        method: 'POST',
-        body: JSON.stringify(values),
-        headers: {
-            "content-type": "application/json; charset=UTF-8"
-        }
-    })
-    .then(res => {
-        if(!res.ok) {
-            throw new Error(res.statusText)
-        }
-        return res.json()})
+    const test = await fetch('/.netlify/functions/helloWorld')
+    .then(response => response.json())
+    alert(JSON.stringify(test))
 
-    .then(data => console.log(data))
-    .catch(error => console.log('Error: ', error))
+    // fetch("/contacto", {
+    //     method: 'POST',
+    //     body: JSON.stringify(values),
+    //     headers: {
+    //         "content-type": "application/json; charset=UTF-8"
+    //     }
+    // })
+    // .then(res => {
+    //     if(!res.ok) {
+    //         throw new Error(res.statusText)
+    //     }
+    //     return res.json()})
+
+    // .then(data => console.log(data))
+    // .catch(error => console.log('Error: ', error))
 }
 
 const phoneRegExp = /^\+?[1-9][0-9]{7,14}$/
@@ -49,7 +53,7 @@ function ContactForm() {
                 <div className='flex flex-col'>
                     <label htmlFor="name" className='font-bold'>Nombre</label>
                     <Field
-                        className='border-2 px-4 w-full border-slate-300 mx-auto focus:outline-royal rounded-md py-2 mt-2'
+                        className='border-2 px-4 w-full border-slate-500 mx-auto focus:outline-royal rounded-md py-2 mt-2'
                         type="text"
                         id='name'
                         name='name'
