@@ -20,7 +20,7 @@ export default function Contacto() {
       <section id='contact-form'>
         <div className='container pb-20 space-y-20 md:space-y-0 mx-auto flex flex-col md:flex-row justify-around items-center'>
           <div>
-            <img className='relative -mt-36' src="../../public/contacto.png" alt="" />
+            <img className='relative -mt-36' src="src/assets/contacto.png" alt="" />
             <h3 className='text-3xl py-5 border-b-2 border-slate-300 text-center md:text-left'>Encuéntranos</h3>
             <div className='flex flex-col space-y-10 mt-10 w-4/6 lg:w-2/4 mx-auto'>
               <div className='flex flex-row justify-between items-center'>

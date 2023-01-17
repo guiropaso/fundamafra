@@ -45,7 +45,7 @@ export default function Proyectos() {
             </div>
           </div>
           <div>
-            <img className='mx-auto mt-10 w-3/4 md:w-full md:mt-0' src="../../public/manos.png" alt="" />
+            <img className='mx-auto mt-10 w-3/4 md:w-full md:mt-0' src="/src/assets/manos.png" alt="" />
           </div>
         </div>
       </section>
@@ -69,7 +69,7 @@ export default function Proyectos() {
               <span className='text-3xl font-bold text-green-500'>$25,000</span>
             </div>
             <div className='col-start-3 col-end-8 row start-1 row-end-2 order-1 md:order-none'>
-              <img className='' src="../../public/p1.jpg" alt="" />
+              <img className='' src="/src/assets/p1.jpg" alt="" />
             </div>
             <div className='col-start-4 col-end-8 row start-2 row-end-3 order-2 md:order-none md:m-5'>
               <h3 className='font-bold text-center md:text-left mt-4 md:mt-0 text-3xl mb-4'>Aprendiendo a mi ritmo</h3>
@@ -87,7 +87,7 @@ export default function Proyectos() {
               <span className='text-3xl font-bold text-green-500'>$19,000</span>
             </div>
             <div className='col-start-3 col-end-8 row start-1 row-end-2 order-1 md:order-none'>
-              <img className='' src="../../public/p2.jpg" alt="" />
+              <img className='' src="/src/assets/p2.jpg" alt="" />
             </div>
             <div className='col-start-4 col-end-8 row start-2 row-end-3 order-2 md:order-none md:m-5'>
               <h3 className='font-bold text-center md:text-left mt-4 md:mt-0 text-3xl mb-4'>Una ventana a mi futuro</h3>
@@ -105,7 +105,7 @@ export default function Proyectos() {
               <span className='text-3xl font-bold text-green-500'>$33,000</span>
             </div>
             <div className='col-start-3 col-end-8 row start-1 row-end-2 order-1 md:order-none'>
-              <img className='' src="../../public/p2.jpg" alt="" />
+              <img className='' src="/src/assets/p3.jpg" alt="" />
             </div>
             <div className='col-start-4 col-end-8 row start-2 row-end-3 order-2 md:order-none md:m-5'>
               <h3 className='font-bold text-center md:text-left mt-4 md:mt-0 text-3xl mb-4'>Eduquemos en positivo</h3>
