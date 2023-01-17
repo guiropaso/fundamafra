@@ -42,10 +42,10 @@ export default function Header() {
           {/* Hamburguer Menu */}
           <div className='md:hidden'>
             <div id='menu' className='absolute hidden flex-col items-center mt-10 font-semibold left-20 right-20 drop-shadow-md divide-y'>
-              <Link className='w-full text-center leading-10 bg-white' to="/">Inicio</Link>
-              <Link className='w-full text-center leading-10 rounded-t bg-white' onClick={handleClick} to="/proyectos">Proyectos</Link>
-              <Link className='w-full text-center leading-10 bg-white' to="/contacto">Contacto</Link>
-              <Link className='w-full text-center leading-10 rounded-b bg-indigo-600 text-white' to="/">Dona ahora</Link>
+              <Link className='w-full text-center leading-10 rounded-t bg-white' onClick={handleClick} to="/">Inicio</Link>
+              <Link className='w-full text-center leading-10 bg-white' onClick={handleClick} to="/proyectos">Proyectos</Link>
+              <Link className='w-full text-center leading-10 bg-white' onClick={handleClick} to="/contacto">Contacto</Link>
+              <Link className='w-full text-center leading-10 rounded-b bg-indigo-600 text-white' onClick={handleClick} to="/">Dona ahora</Link>
             </div>
           </div>
         </nav>
