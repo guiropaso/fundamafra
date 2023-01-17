@@ -53,7 +53,7 @@ export default function Homepage() {
           {/* First Grid Container */}
           <div className='md:grid grid-cols-6 max-w-5xl self-start'>
             <div className='col-start-1 col-end-5 row-start-1 row-end-2'>
-              <img className='w-full' src="../src/assets/voluntarios.jpg" alt="" />
+              <img className='w-full' src="public/voluntarios.jpg" alt="" />
             </div>
             <div className='col-start-4 col-end-7 bg-purple row-start-1 row-end-2 md:my-8 p-5'>
               <h3 className='text-3xl text-white md:mt-20 mb-10'>Voluntariado</h3>
@@ -63,7 +63,7 @@ export default function Homepage() {
           {/* Second Grid Container */}
           <div className='md:grid grid-cols-6 max-w-5xl self-end'>
             <div className='col-start-3 col-end-7 row-start-1 row-end-2'>
-              <img className='w-full' src="./src/assets/pasantias.jpg" alt="" />
+              <img className='w-full' src="/pasantias.jpg" alt="" />
             </div>
             <div className='col-start-1 col-end-4 bg-royal row-start-1 row-end-2 md:my-8 p-5'>
               <h3 className='text-3xl text-white md:mt-20 mb-10 text-right'>Pasantías y oportunidades laborales</h3>
