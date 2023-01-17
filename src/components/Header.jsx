@@ -2,16 +2,19 @@ import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Header() {
+  let hambutton, mobileNav
 
   useEffect(() => {
-    let hambutton = document.getElementById('menu-btn')
-    let mobileNav = document.getElementById('menu')
-    hambutton.addEventListener('click',() => {
-      hambutton.classList.toggle('open')
-      mobileNav.classList.toggle('flex')
-      mobileNav.classList.toggle('hidden')
-    })
+    hambutton = document.getElementById('menu-btn')
+    mobileNav = document.getElementById('menu')
+    hambutton.addEventListener('click',() => handleClick())
   },[])
+
+  function handleClick() {
+    hambutton.classList.toggle('open')
+    mobileNav.classList.toggle('flex')
+    mobileNav.classList.toggle('hidden')
+  }
 
   return (
     <>
@@ -40,7 +43,7 @@ export default function Header() {
           <div className='md:hidden'>
             <div id='menu' className='absolute hidden flex-col items-center mt-10 font-semibold left-20 right-20 drop-shadow-md divide-y'>
               <Link className='w-full text-center leading-10 bg-white' to="/">Inicio</Link>
-              <Link className='w-full text-center leading-10 rounded-t bg-white' to="/proyectos">Proyectos</Link>
+              <Link className='w-full text-center leading-10 rounded-t bg-white' onClick={handleClick} to="/proyectos">Proyectos</Link>
               <Link className='w-full text-center leading-10 bg-white' to="/contacto">Contacto</Link>
               <Link className='w-full text-center leading-10 rounded-b bg-indigo-600 text-white' to="/">Dona ahora</Link>
             </div>
