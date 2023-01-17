@@ -72,6 +72,7 @@ export default function Homepage() {
           </div>
         </div>
       </section>
+      <img src="../src/assets/_x33_.png" alt="" />
     </>
   )
 }
