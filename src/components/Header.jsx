@@ -20,7 +20,7 @@ export default function Header() {
           <div className='flex items-center justify-between'>
             {/* Logo */}
             <div>
-              <img  src="../../public/fundamafra-logoweb.png" alt="" />
+              <img  src="/fundamafra-logoweb.png" alt="" />
             </div>
             {/* Pages */}
             <div className='hidden space-x-12 font-semibold md:flex'>
